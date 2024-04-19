@@ -19,6 +19,5 @@ namespace CCA
             Application.Run(new MainForm());
         }
     }
-
 }
 
