@@ -70,6 +70,9 @@ namespace CCA_design
             catch (Exception ex)
             {
                 MessageBox.Show("データの取得に失敗しました。\n" + ex.Message);
+                this.Close();
+                stream?.Close();
+                client?.Close();
             }
         }
 
@@ -127,6 +130,9 @@ namespace CCA_design
             catch (Exception ex)
             {
                 MessageBox.Show("データの取得に失敗しました。\n" + ex.Message);
+                this.Close();
+                stream?.Close();
+                client?.Close();
             }
         }
 

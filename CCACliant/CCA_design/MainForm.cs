@@ -99,8 +99,9 @@ namespace CCA_design
             {
                 MessageBox.Show("メッセージを入力してね！");
             }
-            
-           
+            main_output_tb.SelectionStart = main_output_tb.TextLength;
+            main_output_tb.ScrollToCaret();
+
 
             //テキストボックス空にする
             main_input_tb.Text = "";
@@ -160,6 +161,7 @@ namespace CCA_design
         }
         //テキストボックスに　受信したニックネーム+メッセージ追加していく
         private void UpdateText()
+        
         {
             // 受信したメッセージをテキストボックスに追加
             main_output_tb.AppendText(receivelog);

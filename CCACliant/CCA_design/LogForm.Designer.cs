@@ -161,9 +161,9 @@
             this.label4.ForeColor = System.Drawing.Color.Red;
             this.label4.Location = new System.Drawing.Point(407, 266);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(232, 16);
+            this.label4.Size = new System.Drawing.Size(240, 16);
             this.label4.TabIndex = 21;
-            this.label4.Text = "履歴の最大表示件数は50件です。";
+            this.label4.Text = "履歴の最大表示件数は100件です。";
             // 
             // LogForm
             // 

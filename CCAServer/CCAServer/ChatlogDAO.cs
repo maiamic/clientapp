@@ -133,7 +133,7 @@ namespace CCAServer
         {
             if (conn == null) return null;
             var searchResults = new List<ChatlogDTO>();
-            string sql = @"SELECT * FROM chatlog WHERE username LIKE @searchText OR message LIKE @searchText  order by id desc LIMIT 50";
+            string sql = @"SELECT * FROM chatlog WHERE username LIKE @searchText OR message LIKE @searchText  order by id desc LIMIT 100";
 
             try
             {
@@ -186,7 +186,7 @@ namespace CCAServer
                     conn.Open();
                 }
 
-                string sql = "SELECT * FROM chatlog WHERE timestamp BETWEEN @startTime AND @endTime  order by id desc LIMIT 50";
+                string sql = "SELECT * FROM chatlog WHERE timestamp BETWEEN @startTime AND @endTime  order by id desc LIMIT 100";
 
                 using (NpgsqlCommand command = new NpgsqlCommand(sql, conn))
                 {
