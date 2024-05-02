@@ -66,6 +66,7 @@ namespace CCA_design
 
                 // 受信したデータを結果表示用テキストボックスに表示
                 result_textBox.Text = responseString;
+ 
             }
             catch (Exception ex)
             {
@@ -125,7 +126,7 @@ namespace CCA_design
                 string responseString = Encoding.UTF8.GetString(responseData, 0, bytesRead);
 
                 // 受信したデータを結果表示用テキストボックスに表示
-                result_textBox.Text = responseString;
+                 result_textBox.Text = responseString;
             }
             catch (Exception ex)
             {
